@@ -19,9 +19,9 @@ public class UserController {
         return repo.save(user);
     }
 
-    @GetMapping("/adress/{adress}")
-    Flux<User> findByAdress(@PathVariable String adress){
-        return repo.findByAdressUsingQueryAnnotation(adress);
+    @GetMapping("/name/{name}")
+    Flux<User> findByName(@PathVariable String name){
+        return repo.findByNameUsingQueryAnnotation(name);
     }
 
     @GetMapping()
