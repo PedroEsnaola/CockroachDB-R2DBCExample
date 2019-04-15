@@ -10,8 +10,6 @@ import reactor.core.publisher.Flux;
 @Repository
 public interface UserRepository extends ReactiveCrudRepository<User, String> {
 
-    @Query("Select * from database_user where adress=$1")
-    Flux<User> findByAdressUsingQueryAnnotation(String adress);
-
-    Flux<User> findByAdress(String adress);
+    @Query("Select * from database_user where name=$1")
+    Flux<User> findByAdressUsingQueryAnnotation(String name);
 }

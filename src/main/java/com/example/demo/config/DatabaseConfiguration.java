@@ -21,11 +21,11 @@ public class DatabaseConfiguration extends  AbstractR2dbcConfiguration {
     int port = 26257;
 
 
-    String database = "test";
+    String database = "teste";
 
     String password = "";
 
-    String username = "test";
+    String username = "teste";
 
     @Override
     public ConnectionFactory connectionFactory() {
